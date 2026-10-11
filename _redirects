@@ -1,0 +1,10 @@
+#  /api/...     -> функция (Node-ядро)
+/api/*          /.netlify/functions/api/:splat    200
+#  картинки вопросов — тоже через функцию (Blobs)
+/uploads/*      /.netlify/functions/api/:splat    200
+#  гостевые ссылки: функция отдаёт страницу с данными теста внутри
+/t/*            /.netlify/functions/api/:splat    200
+/j/*            /.netlify/functions/api/:splat    200
+#  страницы панели и кабинета
+/admin          /admin.html                       200
+/app            /dashboard.html                   200
